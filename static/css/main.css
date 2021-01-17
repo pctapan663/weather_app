@@ -1,0 +1,60 @@
+body{
+    margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Company Logo - Starts */
+#logo {
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin: 5px 5px;
+}
+/* Company Logo - Ends */
+
+/* Search - Starts */
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375re;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+/* Search - Ends */
+
+/* Profile Image and Name - Starts */
+#profileimage {
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+  }
+
+.nav-link{
+    color: gainsboro;
+}
+
+.nav-link > li > a:focus, 
+.nav-link > li > a:hover 
+{
+    color: gainsboro;
+}
+/* Profile Image and Name - Ends */
+
+/* Main Section CSS - Starts */
+#mmenu_screen > .row {
+    min-height: 100vh;
+}
+
+.flex-fill {
+    flex:1 1 auto;
+}
+/* Main Section CSS - Ends */

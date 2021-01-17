@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block head %} 
+
+{% endblock %}
+
+{% block body %} 
+
+    <!-- NAVIGATION STARTS -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img id="logo" src="{{ url_for('static',filename='images/logo.png') }}" alt="Masscoves">R-Mgmt
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="input-group col-lg-9">
+            </div>
+            <!-- Search bar and button -->
+            <div class="input-group col-lg-2">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-secondary" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- User Profile Image and Settings -->
+            <img id='profileimage' src="{{ url_for('static',filename='images/profilephoto1.jpg') }}">
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Mary Jane
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Edit Profile</a>
+                    <a class="dropdown-item" href="#">Log Out</a>
+                        <!-- No divider needed
+                        <div class="dropdown-divider"></div>
+                        -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVIGATION ENDS -->
+
+    <!-- MAIN SCREEN STARTS -->
+    <div id="mmenu_screen" class="container-fluid main_container d-flex">
+        <div class="row flex-fill">
+            <div class="col-sm-1 h-100 bg-dark text-white">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-front" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm5 10v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2v5a2 2 0 0 1-2 2H5z"/>
+                        </svg>
+                      <a class="nav-link active" href="#">Portfolio</a>
+                      
+                    </li>
+
+                    <!--
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                    -->
+                </ul> 
+            </div>
+            <div class="col-sm-6 h-95">
+                {{ value|safe }} 
+            </div>
+
+        </div>
+    </div>
+    <!-- MAIN SCREEN ENDS -->
+
+
+</div>
+
+
+{% endblock %}  
